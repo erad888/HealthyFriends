@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    
+	<RelativeLayout 
+	    android:id="@+id/logoLayout"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	android:background="@color/white"
+	    	android:orientation="horizontal"
+	    	android:gravity="center"
+	    	android:paddingTop="20dp"
+	    	android:paddingBottom="20dp"
+	    	>
+	    
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        android:gravity="center"
+	        android:text="HealthyFriends"
+	        android:textColor="@color/black"
+	        android:textSize="35dp"
+			 />
+    
+    </RelativeLayout>
+    
+    <LinearLayout 
+        android:layout_width="fill_parent"
+    	android:layout_height="fill_parent"
+    	android:layout_below="@id/logoLayout"
+    	android:background="@color/lightGray"
+    	android:orientation="vertical"
+    	android:weightSum="20"
+    	>
+				        
+	        <ScrollView
+				android:layout_width="fill_parent"
+				android:layout_height="fill_parent">
+	        
+				    <LinearLayout 
+				        android:layout_width="fill_parent"
+				    	android:layout_height="fill_parent"
+				    	android:orientation="vertical"
+				        android:layout_marginLeft="30sp"
+				        android:layout_marginRight="30sp" >
+				    
+				    <ImageView
+				        android:id="@+id/imageViewLoginHead"
+				        android:layout_width="80sp"
+				        android:layout_height="80sp"
+				        android:layout_marginTop="40sp"
+				        android:layout_marginBottom="30sp"
+				        android:layout_gravity="center"
+				        android:src="@drawable/login_round_head" />
+				        
+				   <!-- EditText
+				        android:id="@+id/editTextUserNameToLogin"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:layout_marginTop="20sp"
+				        android:hint="User Name"
+				        android:background="@color/white"
+				        android:textSize="28sp" /-->
+				
+				    <!-- EditText
+				        android:id="@+id/editTextPasswordToLogin"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:textSize="28sp"
+				        android:background="@color/white"
+				        android:inputType="textPassword"
+				        android:layout_marginTop="7sp"
+				        android:layout_marginBottom="30sp"
+				        android:hint="Password" /-->
+				    
+				    <!-- Button
+				        android:id="@+id/buttonSignIn"
+				        android:layout_marginTop="15sp"
+				        android:layout_marginLeft="15sp"
+				        android:layout_marginRight="15sp"
+				        android:textSize="28sp"
+				        android:textColor="@color/white"
+				        android:background="@color/baseBlue"
+				        android:layout_width="fill_parent"
+				        android:layout_height="wrap_content"
+				        android:text="Sign In" / -->
+				
+				    <com.facebook.widget.LoginButton
+			            android:id="@+id/login_with_facebook"
+			            android:layout_width="match_parent"
+			            android:layout_height="wrap_content"
+			            android:layout_gravity="center_horizontal"
+			            android:text="@string/login_with_facebook"
+			            />
+				    
+				    </LinearLayout>
+				    
+			</ScrollView>
+    
+    </LinearLayout>
+
+    
+
+</RelativeLayout>
